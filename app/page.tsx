@@ -42,7 +42,7 @@ const Home = () => {
       <div className="flex-1 p-6  max-h-screen">
        {messages.map((msg,i)=>(
          <div key={i} className={`flex ${msg.role === "ai" ? "" : "justify-end"} `}>
-          <div className={` ${msg.role === "ai" ? "bg-[#3e4147] rounded-bl-none" : "bg-[#2563eb] rounded-br-none"} text-white px-4 py-3 rounded-2xl  max-w-[75%]`}>
+          <div className={` ${msg.role === "ai" ? "bg-[#3e4147] h-sreen rounded-bl-none" : "bg-[#2563eb] rounded-br-none"} text-white px-4 py-3 rounded-2xl h-screen  max-w-[75%]`}>
             {msg.text} 
           </div>
         </div>
